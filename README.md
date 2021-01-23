@@ -31,7 +31,7 @@ pwd
 ```
 For brevity, `$(root)=pwd`, i.e. the path to `Approx_LKAS` is called as `$(root)` or `$(LKASROOT)`. 
 
-# 1-5 Dependencies
+# 1-6 Dependencies
 
 ## 1. Dependent libraries
 The following libraries might be needed for successful execution.
