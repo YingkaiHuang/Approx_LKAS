@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+Profile data file 'valgrind/profile.callgrind.1' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 43874652
+Trigger: Client Request
+Profiled target:  ./lanedetect_single.o (PID 30554, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       90
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+12,018,025 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+12,018,025 (100.0%)  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.27.so]
+12,018,025 (100.0%)  /home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/lanedetect_single.cpp:main
+12,018,025 (100.0%)  ???:0x0000000000001090 [/lib/x86_64-linux-gnu/ld-2.27.so]
+12,018,025 (100.0%)  ???:_start [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/lanedetect_single.o]
+12,017,988 (100.0%)  lanedetect_single.cpp:main [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/lanedetect_single.o]
+12,017,937 (100.0%)  /home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/lane_detection.cpp:laneDetection::lane_detection_pipeline(cv::Mat)
+11,867,775 (98.75%)  lane_detection.cpp:laneDetection::lane_detection_pipeline(cv::Mat) [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/lanedetect_single.o]
+ 5,836,319 (48.56%)  lane_detection.cpp:laneDetection::sliding_window_lane_tracking(cv::Mat&) [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/lanedetect_single.o]
+ 5,105,340 (42.48%)  lane_detection.cpp:laneDetection::calculate_lateral_deviation(std::vector<cv::Point_<int>, std::allocator<cv::Point_<int> > >, std::vector<cv::Point_<int>, std::allocator<cv::Point_<int> > >) [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/lanedetect_single.o]
+ 4,490,357 (37.36%)  /home/sayandipde/Approx_IBC/final_app/cpp/Profiling/lane-detection-profiling/./other-sources/polyfit.hpp:std::vector<long double, std::allocator<long double> > mathalgo::polyfit<long double>(std::vector<long double, std::allocator<long double> > const&, std::vector<long double, std::allocator<long double> > const&, int) [clone .constprop.177]
+ 2,489,194 (20.71%)  ./other-sources/matrix.hpp:std::vector<long double, std::allocator<long double> > mathalgo::polyfit<long double>(std::vector<long double, std::allocator<long double> > const&, std::vector<long double, std::allocator<long double> > const&, int) [clone .constprop.177]
+ 2,096,753 (17.45%)  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/lib/x86_64-linux-gnu/libc-2.27.so]
+ 2,095,846 (17.44%)  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_erms [/lib/x86_64-linux-gnu/libc-2.27.so]
+ 1,826,611 (15.20%)  /home/sayandipde/anaconda3/include/opencv2/core/mat.inl.hpp:laneDetection::sliding_window_lane_tracking(cv::Mat&)
+ 1,441,881 (12.00%)  ???:cv::findNonZero(cv::_InputArray const&, cv::_OutputArray const&) [/home/sayandipde/anaconda3/lib/libopencv_core.so.3.4.2]
+   937,569 ( 7.80%)  /usr/include/c++/7/ext/new_allocator.h:std::vector<long double, std::allocator<long double> > mathalgo::polyfit<long double>(std::vector<long double, std::allocator<long double> > const&, std::vector<long double, std::allocator<long double> > const&, int) [clone .constprop.177]
+

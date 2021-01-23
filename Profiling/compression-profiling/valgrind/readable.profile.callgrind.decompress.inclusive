@@ -1,0 +1,44 @@
+--------------------------------------------------------------------------------
+Profile data file 'valgrind/profile.callgrind.decompress.1' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 27208647
+Trigger: Client Request
+Profiled target:  ./compress_single.o (PID 30480, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       90
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+25,149,907 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+25,149,907 (100.0%)  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.27.so]
+25,149,907 (100.0%)  /home/sayandipde/Approx_IBC/final_app/cpp/Profiling/compression-profiling/compress_single.cpp:main
+25,149,907 (100.0%)  ???:0x0000000000001090 [/lib/x86_64-linux-gnu/ld-2.27.so]
+25,149,907 (100.0%)  ???:_start [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/compression-profiling/compress_single.o]
+25,149,807 (100.0%)  compress_single.cpp:main [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/compression-profiling/compress_single.o]
+25,149,006 (100.0%)  ???:cv::imread(cv::String const&, int) [/home/sayandipde/anaconda3/lib/libopencv_imgcodecs.so.3.4.2]
+25,128,780 (99.92%)  ???:cv::imread_(cv::String const&, int, int, cv::Mat*) [/home/sayandipde/anaconda3/lib/libopencv_imgcodecs.so.3.4.2]
+25,108,783 (99.84%)  ???:cv::JpegDecoder::readData(cv::Mat&) [/home/sayandipde/anaconda3/lib/libopencv_imgcodecs.so.3.4.2]
+23,753,926 (94.45%)  ???:jpeg_read_scanlines [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+23,744,198 (94.41%)  ???:process_data_simple_main [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+20,683,558 (82.24%)  ???:decompress_onepass [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+12,213,272 (48.56%)  ???:decode_mcu [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 5,056,512 (20.11%)  ???:jpeg_idct_16x16 [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 4,806,872 (19.11%)  ???:jpeg_fill_bit_buffer [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 3,214,078 (12.78%)  ???:jpeg_idct_islow [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 3,050,752 (12.13%)  ???:sep_upsample [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 3,029,248 (12.04%)  ???:ycc_rgb_convert [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 1,319,936 ( 5.25%)  ???:icvCvt_BGR2RGB_8u_C3R(unsigned char const*, int, unsigned char*, int, CvSize) [/home/sayandipde/anaconda3/lib/libopencv_imgcodecs.so.3.4.2]
+

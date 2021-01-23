@@ -1,0 +1,43 @@
+--------------------------------------------------------------------------------
+Profile data file 'valgrind/profile.callgrind.compress.1' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 24444745
+Trigger: Client Request
+Profiled target:  ./compress_single.o (PID 30461, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       90
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+34,794,702 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+34,794,702 (100.0%)  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.27.so]
+34,794,702 (100.0%)  /home/sayandipde/Approx_IBC/final_app/cpp/Profiling/compression-profiling/compress_single.cpp:main
+34,794,702 (100.0%)  ???:0x0000000000001090 [/lib/x86_64-linux-gnu/ld-2.27.so]
+34,794,702 (100.0%)  ???:_start [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/compression-profiling/compress_single.o]
+34,794,599 (100.0%)  compress_single.cpp:main [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/compression-profiling/compress_single.o]
+34,794,203 (100.0%)  ???:cv::imwrite(cv::String const&, cv::_InputArray const&, std::vector<int, std::allocator<int> > const&) [/home/sayandipde/anaconda3/lib/libopencv_imgcodecs.so.3.4.2]
+34,793,785 (100.0%)  ???:cv::imwrite_(cv::String const&, std::vector<cv::Mat, std::allocator<cv::Mat> > const&, std::vector<int, std::allocator<int> > const&, bool) [/home/sayandipde/anaconda3/lib/libopencv_imgcodecs.so.3.4.2]
+34,791,385 (99.99%)  ???:cv::JpegEncoder::write(cv::Mat const&, std::vector<int, std::allocator<int> > const&) [/home/sayandipde/anaconda3/lib/libopencv_imgcodecs.so.3.4.2]
+33,416,484 (96.04%)  ???:jpeg_write_scanlines [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+33,394,047 (95.97%)  ???:process_data_simple_main [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+29,687,738 (85.32%)  ???:compress_data [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+18,676,461 (53.68%)  ???:encode_mcu_huff [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+10,897,197 (31.32%)  ???:forward_DCT [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 4,547,584 (13.07%)  ???:jpeg_fdct_16x16 [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 3,694,248 (10.62%)  ???:pre_process_data [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 3,550,720 (10.20%)  ???:rgb_ycc_convert [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+ 2,752,512 ( 7.91%)  ???:jpeg_fdct_islow [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+

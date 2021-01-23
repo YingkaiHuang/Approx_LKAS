@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+Profile data file 'valgrind/profile.callgrind.v4.1' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 94842492
+Trigger: Client Request
+Profiled target:  ./isp_single.o 4 (PID 4740, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       90
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+1,171,249 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,025,280 (87.54%)  ???:auto_schedule_true_fwd_v4.par_for.processed.s0.c.par_for.processed.s0.y [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+   73,068 ( 6.24%)  ???:Halide::Runtime::Internal::worker_thread_already_locked(Halide::Runtime::Internal::work*)'2 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+

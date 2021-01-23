@@ -1,0 +1,53 @@
+// Target: x86-64-linux-avx-avx2-f16c-fma-no_runtime-sse41
+// MachineParams: 32,16384,40
+
+// Delete this line if not using Generator
+Pipeline pipeline = get_pipeline();
+
+Var x_i("x_i");
+Var x_i_vi("x_i_vi");
+Var x_i_vo("x_i_vo");
+Var x_o("x_o");
+Var x_vi("x_vi");
+Var x_vo("x_vo");
+
+Func argmin = pipeline.get_func(6);
+Func processed = pipeline.get_func(8);
+Func transform = pipeline.get_func(3);
+
+{
+    Var x = argmin.args()[1];
+    RVar idx2$x(argmin.update(0).get_schedule().rvars()[0].var);
+    argmin
+        .compute_at(processed, x_o)
+        .split(x, x_vo, x_vi, 8)
+        .vectorize(x_vi);
+    argmin.update(0)
+        .reorder(idx2$x, x, c, y)
+        .split(x, x_vo, x_vi, 8, TailStrategy::GuardWithIf)
+        .vectorize(x_vi);
+}
+{
+    Var x = processed.args()[0];
+    Var y = processed.args()[1];
+    Var c = processed.args()[2];
+    processed
+        .compute_root()
+        .split(x, x_o, x_i, 64)
+        .reorder(x_i, x_o, y, c)
+        .split(x_i, x_i_vo, x_i_vi, 32)
+        .vectorize(x_i_vi)
+        .parallel(c)
+        .parallel(y);
+}
+{
+    Var x = transform.args()[0];
+    Var y = transform.args()[1];
+    Var c = transform.args()[2];
+    transform
+        .compute_at(processed, x_o)
+        .reorder(x, c, y)
+        .split(x, x_vo, x_vi, 8)
+        .vectorize(x_vi);
+}
+

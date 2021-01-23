@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------------
+Profile data file 'valgrind/profile.callgrind.v3.1' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 148686385
+Trigger: Client Request
+Profiled target:  ./isp_single.o 3 (PID 4636, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       90
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+93,574,031 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+140,295,798 (149.9%)  ???:halide_do_par_for'2 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+140,295,762 (149.9%)  ???:halide_default_do_par_for'2 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+140,294,634 (149.9%)  ???:Halide::Runtime::Internal::worker_thread_already_locked(Halide::Runtime::Internal::work*)'2 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+140,293,244 (149.9%)  ???:halide_do_task'2 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+140,293,184 (149.9%)  ???:halide_default_do_task'2 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,574,031 (100.0%)  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.27.so]
+ 93,574,031 (100.0%)  /home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.cpp:main
+ 93,574,031 (100.0%)  ???:0x0000000000001090 [/lib/x86_64-linux-gnu/ld-2.27.so]
+ 93,574,031 (100.0%)  ???:_start [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,574,031 (100.0%)  isp_single.cpp:main [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,574,031 (100.0%)  isp_single.cpp:run_pipeline(bool, int) [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,573,940 (100.0%)  ???:auto_schedule_true_fwd_v3 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,572,854 (100.0%)  ???:halide_do_par_for [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,572,848 (100.0%)  ???:halide_default_do_par_for [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,531,816 (99.95%)  ???:Halide::Runtime::Internal::worker_thread_already_locked(Halide::Runtime::Internal::work*) [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,529,994 (99.95%)  ???:halide_do_task [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,529,970 (99.95%)  ???:halide_default_do_task [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 93,526,856 (99.95%)  ???:auto_schedule_true_fwd_v3.par_for.processed.s0.y.y_o.par_for.processed.s0.x.x_vo [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 70,148,228 (74.97%)  ???:auto_schedule_true_fwd_v3.par_for.processed.s0.y.y_o [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+ 70,147,972 (74.97%)  ???:auto_schedule_true_fwd_v3.par_for.processed.s0.y.y_o'2 [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+     41,691 ( 0.04%)  ???:Halide::Runtime::Internal::enqueue_work_already_locked(int, Halide::Runtime::Internal::work*, Halide::Runtime::Internal::work*) [/home/sayandipde/Approx_IBC/final_app/cpp/Profiling/isp-versions-profiling/isp_single.o]
+

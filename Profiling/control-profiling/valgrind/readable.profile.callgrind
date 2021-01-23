@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------
+Profile data file 'valgrind/profile.callgrind.1' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 79142669
+Trigger: Client Request
+Profiled target:  ./lateralcontrol_single.o (PID 519, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       90
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir              
+--------------------------------------------------------------------------------
+11,807 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir              file:function
+--------------------------------------------------------------------------------
+6,418 (54.36%)  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/lib/x86_64-linux-gnu/libc-2.27.so]
+1,861 (15.76%)  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:_int_malloc [/lib/x86_64-linux-gnu/libc-2.27.so]
+1,408 (11.93%)  /home/sayandipde/Approx_IBC/final_app/eigen/Eigen/src/Core/DenseStorage.h:lateralController::lateralController(lateralController const&)
+  703 ( 5.95%)  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:free [/lib/x86_64-linux-gnu/libc-2.27.so]
+  368 ( 3.12%)  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:malloc [/lib/x86_64-linux-gnu/libc-2.27.so]
+

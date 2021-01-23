@@ -1,0 +1,10 @@
+RAPL read -- use -s for sysfs, -p for perf_event, -m for msr
+
+Found Kaby Lake Processor type
+	0 (0), 1 (0), 2 (0), 3 (0), 4 (0), 5 (0), 6 (0), 7 (0)
+	8 (0), 9 (0), 10 (0), 11 (0), 12 (0), 13 (0), 14 (0), 15 (0)
+	
+	Detected 16 cores in 1 packages
+
+
+Using sysfs powercap interface to gather results

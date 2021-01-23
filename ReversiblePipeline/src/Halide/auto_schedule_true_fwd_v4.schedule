@@ -1,0 +1,23 @@
+// Target: x86-64-linux-avx-avx2-f16c-fma-no_runtime-sse41
+// MachineParams: 32,16384,40
+
+// Delete this line if not using Generator
+Pipeline pipeline = get_pipeline();
+
+Var x_vi("x_vi");
+Var x_vo("x_vo");
+
+Func processed = pipeline.get_func(4);
+
+{
+    Var x = processed.args()[0];
+    Var y = processed.args()[1];
+    Var c = processed.args()[2];
+    processed
+        .compute_root()
+        .split(x, x_vo, x_vi, 32)
+        .vectorize(x_vi)
+        .parallel(c)
+        .parallel(y);
+}
+

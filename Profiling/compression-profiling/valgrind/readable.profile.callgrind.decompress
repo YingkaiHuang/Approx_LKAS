@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------
+Profile data file 'valgrind/profile.callgrind.decompress.1' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 27208647
+Trigger: Client Request
+Profiled target:  ./compress_single.o (PID 30480, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       90
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+25,149,907 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+7,231,485 (28.75%)  ???:decode_mcu [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+5,056,512 (20.11%)  ???:jpeg_idct_16x16 [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+4,779,665 (19.00%)  ???:jpeg_fill_bit_buffer [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+3,214,078 (12.78%)  ???:jpeg_idct_islow [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+3,029,248 (12.04%)  ???:ycc_rgb_convert [/home/sayandipde/anaconda3/lib/libjpeg.so.9.2.0]
+
