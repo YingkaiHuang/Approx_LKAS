@@ -1,12 +1,12 @@
- Setting up IMACS Approx_LKAS in Linux
-Approximation Trade Offs in an Image Based Control System.
-Tested using the following versions. If you would like to use latest versions, you might have to edit the syntax of some functions.
+# Setting up IMACS Approx_LKAS using Webots in Linux
 
 If you are using this simulator in any form in your work, please cite:
 ```
-S. De, S. Mohamed, K. Bimpisidis, D. Goswami, T. Basten and H. Corporaal, "Approximation Trade Offs in an Image-Based Control System," 2020 Design, Automation & Test in Europe Conference & Exhibition (DATE), Grenoble, France, 2020, pp. 1680-1685, doi: 10.23919/DATE48585.2020.9116552.
+S. De, S. Mohamed, K. Bimpisidis, D. Goswami, T. Basten and H. Corporaal, "Approximation Trade Offs in an Image-Based Control System," in Design, Automation & Test in Europe Conference (DATE), 2020, pp. 1680-1685, doi: 10.23919/DATE48585.2020.9116552.
 
 S. De, S. Mohamed, D. Goswami and H. Corporaal, "Approximation-Aware Design of an Image-Based Control System," in IEEE Access, vol. 8, pp. 174568-174586, 2020, doi: 10.1109/ACCESS.2020.3023047.
+
+S. Mohamed, S. De, K. Bimpisidis, V, Nathan, D. Goswami, H. Corporaal, and T. Basten, “IMACS: A Framework for Performance Evaluation of Image Approximation in a Closed-loop System,” in Proceedings of the 8th Mediterranean Conference on Embedded Computing (MECO), 2019.
 ```
 
 Tested with the following versions:
