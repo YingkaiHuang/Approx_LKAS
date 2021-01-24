@@ -1,5 +1,6 @@
 # Setting up IMACS Approx_LKAS using Webots in Linux
 
+More details about the simulator can be found in http://www.es.ele.tue.nl/ecs/imacs. You could also read the papers below.
 If you are using this simulator in any form in your work, please cite:
 ```
 S. De, S. Mohamed, K. Bimpisidis, D. Goswami, T. Basten and H. Corporaal, "Approximation Trade Offs in an Image-Based Control System," in Design, Automation & Test in Europe Conference (DATE), 2020, pp. 1680-1685, doi: 10.23919/DATE48585.2020.9116552.
